@@ -30,11 +30,16 @@ $rspta = $venta->ventacabecera($_GET["id"]);
 $reg=$rspta->fetch_object();
 
 //establecemos los datos de la empresa
-$empresa = "Tecnology S.A.C.";
+$empresa = "MOTO SERVICIO KITERIO";
+$nombre = "EDUARDO QUITERIO GUZMAN";
+$rfc  = "R.F.C. QUGE-840422-S12";
 $documento = "102589524";
-$direccion = "calle los alpes 120";
-$telefono = "854715648";
-$email = "angelinos257@gmail.com";
+$direccion = "Calle Prolog. Ocampo #367 Colonia los Olivos Actopan Hgo C.P. 42510";
+
+
+$telefono = "7727270544";
+
+$email = "equiterio@hotmail.com";
 	 ?>
 <div class="zona_impresion">
 	<!--codigo imprimir-->
@@ -44,8 +49,12 @@ $email = "angelinos257@gmail.com";
 			<td align="center">
 				<!--mostramos los datos de la empresa en el doc HTML-->
 				.::<strong> <?php echo $empresa; ?></strong>::.<br>
+				<?php echo $nombre; ?><br>
+				<?php echo $rfc; ?><br>
 				<?php echo $documento; ?><br>
+				
 				<?php echo $direccion . '-'.$telefono; ?><br>
+				
 			</td>
 		</tr>
 		<tr>

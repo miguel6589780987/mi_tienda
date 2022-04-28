@@ -3262,14 +3262,14 @@ table.text-center th {
 }
 .login-box-body,
 .register-box-body {
-  background: #fff;
+  background: rgb(226, 217, 217);
   padding: 20px;
   border-top: 0;
   color: #666;
 }
 .login-box-body .form-control-feedback,
 .register-box-body .form-control-feedback {
-  color: #777;
+  color: rgb(14, 13, 13);
 }
 .login-box-msg,
 .register-box-msg {
