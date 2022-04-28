@@ -33,7 +33,7 @@ $reg=$rspta->fetch_object();
 $empresa = "MOTO SERVICIO KITERIO";
 $nombre = "EDUARDO QUITERIO GUZMAN";
 $rfc  = "R.F.C. QUGE-840422-S12";
-$documento = "102589524";
+$cesit = "CESIT  4828";
 $direccion = "Calle Prolog. Ocampo #367 Colonia los Olivos Actopan Hgo C.P. 42510";
 
 
@@ -45,20 +45,24 @@ $email = "equiterio@hotmail.com";
 	<!--codigo imprimir-->
 	<br>
 	<table border="0" align="center" width="300px">
+			
+			<tr>
+			<td colspan="3">************************************</td>
+		</tr>
 		<tr>
 			<td align="center">
 				<!--mostramos los datos de la empresa en el doc HTML-->
-				.::<strong> <?php echo $empresa; ?></strong>::.<br>
+			
+				...::::::<strong> <?php echo $empresa; ?></strong>::::::..<br>
 				<?php echo $nombre; ?><br>
 				<?php echo $rfc; ?><br>
-				<?php echo $documento; ?><br>
-				
-				<?php echo $direccion . '-'.$telefono; ?><br>
-				
+				<?php echo $direccion; ?><br>
+				<?php echo $telefono; ?><br>
+				<?php echo $cesit; ?><br>
 			</td>
 		</tr>
 		<tr>
-			<td align="center"><?php echo $reg->fecha; ?></td>
+			<td>FECHA: <?php echo $reg->fecha; ?></td>
 		</tr>
 		<tr> 
 			<td align="center"></td>
@@ -68,6 +72,7 @@ $email = "equiterio@hotmail.com";
 			<td>Cliente: <?php echo $reg->cliente; ?>
 			</td>
 		</tr>
+		
 		<tr>
 			<td>
 				<?php echo $reg->tipo_documento.": ".$reg->num_documento; ?>
@@ -90,7 +95,7 @@ $email = "equiterio@hotmail.com";
 			<td align="right">IMPORTE</td>
 		</tr>
 		<tr>
-			<td colspan="3">=============================================</td>
+			<td colspan="3">************************************</td>
 		</tr>
 		<?php
 		$rsptad = $venta->ventadetalles($_GET["id"]);
@@ -99,7 +104,7 @@ $email = "equiterio@hotmail.com";
 		 	echo "<tr>";
 		 	echo "<td>".$regd->cantidad."</td>";
 		 	echo "<td>".$regd->articulo."</td>";
-		 	echo "<td align='right'>S/. ".$regd->subtotal."</td>";
+		 	echo "<td align='right'>$".$regd->subtotal."</td>";
 		 	echo "</tr>";
 		 	$cantidad+=$regd->cantidad;
 		 } 
@@ -109,7 +114,7 @@ $email = "equiterio@hotmail.com";
 		<tr>
 			<td>&nbsp;</td>
 			<td align="right"><b>TOTAL:</b></td>
-			<td align="right"><b>S/. <?php echo $reg->total_venta; ?></b></td>
+			<td align="right"><b>$ <?php echo $reg->total_venta; ?></b></td>
 		</tr>
 		<tr>
 			<td colspan="3">N° de articulos: <?php echo $cantidad; ?> </td>
@@ -121,10 +126,10 @@ $email = "equiterio@hotmail.com";
 			<td colspan="3" align="center">¡Gracias por su compra!</td>
 		</tr>
 		<tr>
-			<td colspan="3" align="center">AngshelinoWeb</td>
+			<td colspan="3" align="center">DESPUES DE 30 DIAS NO NOS HACEMOS RESPONSABLES </td>
 		</tr>
 		<tr>
-			<td colspan="3" align="center">Arequipa - Peru</td>
+			<td colspan="3" align="center">***********************************</td>
 		</tr>
 	</table>
 	<br>
