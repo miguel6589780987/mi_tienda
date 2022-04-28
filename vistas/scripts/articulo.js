@@ -72,7 +72,7 @@ function listar(){
 			}
 		},
 		"bDestroy":true,
-		"iDisplayLength":5,//paginacion
+		"iDisplayLength":20,//paginacion
 		"order":[[0,"desc"]]//ordenar (columna, orden)
 	}).DataTable();
 }
