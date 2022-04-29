@@ -98,22 +98,7 @@ if ($_SESSION['escritorio']==1) {
         </li>';
 }
         ?>
-               <?php 
-if ($_SESSION['corte']==1) {
-  echo ' <li class="treeview">
-          <a href="#">
-            <i class="fa fa-pencil"></i> <span>Corte</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="corte.php"><i class="fa fa-circle-o"></i> Generar Corte</a></li>
-            <li><a href="historial_corte.php"><i class="fa fa-circle-o"></i> Historial</a></li>
-          </ul>
-        </li>';
-}
-        ?>
+
 
 
                <?php 
