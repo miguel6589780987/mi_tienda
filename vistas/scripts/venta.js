@@ -38,7 +38,7 @@ function limpiar(){
 	$("#fecha_hora").val(today);
 
 	//marcamos el primer tipo_documento
-	$("#tipo_comprobante").val("Boleta");
+	$("#tipo_comprobante").val("Ticket");
 	$("#tipo_comprobante").selectpicker('refresh');
 
 }
@@ -47,6 +47,7 @@ function limpiar(){
 function mostrarform(flag){
 	limpiar();
 	if(flag){
+		$("#impuesto").val("0");
 		$("#listadoregistros").hide();
 		$("#formularioregistros").show();
 		//$("#btnGuardar").prop("disabled",false);
@@ -94,7 +95,7 @@ function listar(){
 			}
 		},
 		"bDestroy":true,
-		"iDisplayLength":5,//paginacion
+		"iDisplayLength":15,//paginacion
 		"order":[[0,"desc"]]//ordenar (columna, orden)
 	}).DataTable();
 }
@@ -117,7 +118,7 @@ function listarArticulos(){
 			}
 		},
 		"bDestroy":true,
-		"iDisplayLength":5,//paginacion
+		"iDisplayLength":15,//paginacion
 		"order":[[0,"desc"]]//ordenar (columna, orden)
 	}).DataTable();
 }
@@ -255,7 +256,7 @@ function calcularTotales(){
 	for (var i = 0; i < sub.length; i++) {
 		total += document.getElementsByName("subtotal")[i].value;
 	}
-	$("#total").html("S/." + total);
+	$("#total").html("$" + total);
 	$("#total_venta").val(total);
 	evaluar();
 }

@@ -70,27 +70,24 @@ if ($_SESSION['ventas']==1) {
      <div class="form-group col-lg-6 col-md-6 col-xs-12">
       <label for="">Tipo Comprobante(*): </label>
      <select name="tipo_comprobante" id="tipo_comprobante" class="form-control selectpicker" required>
-       <option value="Boleta">Boleta</option>
-       <option value="Factura">Factura</option>
-       <option value="Ticket">Ticket</option>
+     <option value="" selected>Selecciona</option>
+     <option value="Ticket">Ticket</option>  
+    
+       
+       
      </select>
     </div>
      <div class="form-group col-lg-2 col-md-2 col-xs-6">
-      <label for="">Serie: </label>
-      <input class="form-control" type="text" name="serie_comprobante" id="serie_comprobante" maxlength="7" placeholder="Serie">
-    </div>
-     <div class="form-group col-lg-2 col-md-2 col-xs-6">
-      <label for="">Número: </label>
-      <input class="form-control" type="text" name="num_comprobante" id="num_comprobante" maxlength="10" placeholder="Número" required>
-    </div>
-    <div class="form-group col-lg-2 col-md-2 col-xs-6">
-      <label for="">Impuesto: </label>
-      <input class="form-control" type="text" name="impuesto" id="impuesto">
-    </div>
-    <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-12">
-     <a data-toggle="modal" href="#myModal">
+      <a data-toggle="modal" href="#myModal">
        <button id="btnAgregarArt" type="button" class="btn btn-primary"><span class="fa fa-plus"></span>Agregar Articulos</button>
      </a>
+    </div>
+     <div class="form-group col-lg-2 col-md-2 col-xs-6">
+      
+    </div>
+    
+    <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    
     </div>
 <div class="form-group col-lg-12 col-md-12 col-xs-12">
      <table id="detalles" class="table table-striped table-bordered table-condensed table-hover">
