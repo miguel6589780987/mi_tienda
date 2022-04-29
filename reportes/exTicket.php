@@ -80,7 +80,7 @@ $email = "equiterio@hotmail.com";
 		</tr>
 		<tr>
 			<td>
-				N° de venta: <?php echo $reg->serie_comprobante." - ".$reg->num_comprobante; ?>
+				N° de venta: <?php echo '000'.$reg->idventa; ?>
 			</td>
 		</tr>
 	</table>
