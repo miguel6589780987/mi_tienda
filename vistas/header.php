@@ -38,7 +38,8 @@ if (strlen(session_id())<1)
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>SIS</b> V</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>SIS</b> VENTAS</span>
+      <img src="../public/images/logokiterio.jpg" 
+          width="100%" height="100%" style="float: center">
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
