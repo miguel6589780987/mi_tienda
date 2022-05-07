@@ -23,10 +23,10 @@ $pdf->AddPage();
 $y_axis_initial=25;
 
 //seteamos el tipo de letra y creamos el titulo de la pagina. No se repetira como encabezado
-$pdf->SetFont('Arial','B',12);
+$pdf->SetFont('Arial','B',11);
 
 $pdf->Cell(40,6,'',0,0,'C');
-$pdf->Cell(100,6,'LISTA DE ARTICULOS',1,0,'C');
+$pdf->Cell(100,6,'LISTA DE REFACCIONES MOTO SERVICIO KITERIO',1,0,'C');
 $pdf->Ln(10);
 
 //creamos las celdas para los titulos de cada columna y le asignamos un fondo gris y el tipo de letra

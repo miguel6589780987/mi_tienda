@@ -32,7 +32,7 @@ if ($_SESSION['acceso']==1) {
       <th>Opciones</th>
       <th>Nombre</th>
       <th>Documento</th>
-      <th>Numero Documento</th>
+      <th>Número de Identificación</th>
       <th>Telefono</th>
       <th>Email</th>
       <th>Login</th>
@@ -45,7 +45,7 @@ if ($_SESSION['acceso']==1) {
       <th>Opciones</th>
       <th>Nombre</th>
       <th>Documento</th>
-      <th>Numero Documento</th>
+      <th>Número de Identificación</th>
       <th>Telefono</th>
       <th>Email</th>
       <th>Login</th>
@@ -64,9 +64,9 @@ if ($_SESSION['acceso']==1) {
     <div class="form-group col-lg-6 col-md-6 col-xs-12">
       <label for="">Tipo Identificación:</label>
      <select name="tipo_documento" id="tipo_documento" class="form-control select-picker" placeholder="  " required>
-     <option value="SELECCIONAR">Seleccionar..</option>
-     <option value="DNI">INE</option>
-       <option value="RUC">LICENCIA</option>
+     <option value="  ">Seleccionar..</option>
+     <option value="INE">INE</option>
+       <option value="LICENCIA">LICENCIA</option>
        <option value="CEDULA">CEDULA</option>
        <option value="NINGUNA">NINGUNA</option>
      </select>

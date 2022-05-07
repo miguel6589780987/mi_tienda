@@ -108,7 +108,7 @@ if ($_SESSION['escritorio']==1) {
 if ($_SESSION['almacen']==1) {
   echo ' <li class="treeview">
           <a href="#">
-            <i class="fa fa-laptop"></i> <span>Refaciones</span>
+            <i class="fa fa-laptop"></i> <span>Refacciones</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -180,7 +180,7 @@ if ($_SESSION['consultac']==1) {
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="comprasfecha.php"><i class="fa fa-circle-o"></i>Ingreso de refacciones</a></li>
+            <li><a href="comprasfecha.php"><i class="fa fa-circle-o"></i>Ingreso de Refacciones</a></li>
           </ul>
         </li>';
 }

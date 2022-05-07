@@ -59,28 +59,28 @@ if ($_SESSION['almacen']==1) {
 <div class="panel-body" id="formularioregistros">
   <form action="" name="formulario" id="formulario" method="POST">
     <div class="form-group col-lg-6 col-md-6 col-xs-12">
-      <label for="">Nombre(*):</label>
+      <label for="">Nombre:</label>
       <input class="form-control" type="hidden" name="idarticulo" id="idarticulo">
       <input class="form-control" type="text" name="nombre" id="nombre" maxlength="100" placeholder="Nombre" required>
     </div>
     <div class="form-group col-lg-6 col-md-6 col-xs-12">
-      <label for="">Marca</label>
+      <label for="">Marca:</label>
       <input class="form-control" type="text" name="marca" id="marca" maxlength="100" placeholder="Marca" required>
     </div>
     <div class="form-group col-lg-6 col-md-6 col-xs-12">
-      <label for="">Categoria(*):</label>
+      <label for="">Categoría:</label>
       <select name="idcategoria" id="idcategoria" class="form-control selectpicker" data-Live-search="true" required></select>
     </div>
        <div class="form-group col-lg-6 col-md-6 col-xs-12">
-      <label for="">Stock</label>
+      <label for="">Stock:</label>
       <input class="form-control" type="number" name="stock" id="stock"  required>
     </div>
     <div class="form-group col-lg-6 col-md-6 col-xs-12">
-      <label for="">Descripcion</label>
+      <label for="">Descripción:</label>
       <input class="form-control" type="text" name="descripcion" id="descripcion" maxlength="256" placeholder="Descripcion">
     </div>
     <div class="form-group col-lg-6 col-md-6 col-xs-12">
-      <label for="">Aplicacion</label>
+      <label for="">Aplicación:</label>
       <input class="form-control" type="text" name="aplicacion" id="aplicacion" maxlength="100" placeholder="Aplicacion" required>
     </div>
         <div class="form-group col-lg-6 col-md-6 col-xs-12">
@@ -90,7 +90,7 @@ if ($_SESSION['almacen']==1) {
       <img src="" alt="" width="250px" height="220" id="imagenmuestra">
     </div>
     <div class="form-group col-lg-6 col-md-6 col-xs-12">
-      <label for="">Codigo:</label>
+      <label for="">Código:</label>
       <input class="form-control" type="text" name="codigo" id="codigo" placeholder="codigo del prodcuto" required>
       <button class="btn btn-success" type="button" onclick="generarbarcode()">Generar</button>
       <button class="btn btn-info" type="button" onclick="imprimir()">Imprimir</button>

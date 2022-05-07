@@ -21,8 +21,8 @@ if ($_SESSION['almacen']==1) {
         <div class="col-md-12">
       <div class="box">
 <div class="box-header with-border">
-<b><H1><p class="login-box-msg" > Control de Categorias</H1></b></p>
-  <h1 class="box-title"><button class="btn btn-success" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i>Agregar  Categoria</button></h1>
+<b><H1><p class="login-box-msg" > Control de Categorías</H1></b></p>
+  <h1 class="box-title"><button class="btn btn-success" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i>Agregar  Categoría</button></h1>
   <div class="box-tools pull-right">
     
   </div>
@@ -34,7 +34,7 @@ if ($_SESSION['almacen']==1) {
     <thead>
       <th>Opciones</th>
       <th>Nombre</th>
-      <th>Descripcion</th>
+      <th>Descripción</th>
       <th>Estado</th>
     </thead>
     <tbody>
@@ -42,7 +42,7 @@ if ($_SESSION['almacen']==1) {
     <tfoot>
        <th>Opciones</th>
       <th>Nombre</th>
-      <th>Descripcion</th>
+      <th>Descripción</th>
       <th>Estado</th>
     </tfoot>   
   </table>
@@ -50,12 +50,12 @@ if ($_SESSION['almacen']==1) {
 <div class="panel-body" style="height: 400px;" id="formularioregistros">
   <form action="" name="formulario" id="formulario" method="POST">
     <div class="form-group col-lg-6 col-md-6 col-xs-12">
-      <label for="">Nombre</label>
+      <label for="">Nombre:</label>
       <input class="form-control" type="hidden" name="idcategoria" id="idcategoria">
       <input class="form-control" type="text" name="nombre" id="nombre" maxlength="50" placeholder="Nombre" required>
     </div>
         <div class="form-group col-lg-6 col-md-6 col-xs-12">
-      <label for="">Descripcion</label>
+      <label for="">Descripción:</label>
       <input class="form-control" type="text" name="descripcion" id="descripcion" maxlength="256" placeholder="Descripcion">
     </div>
     <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
