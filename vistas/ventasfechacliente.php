@@ -21,7 +21,7 @@ if ($_SESSION['consultav']==1) {
         <div class="col-md-12">
       <div class="box">
 <div class="box-header with-border">
-  <h1 class="box-title">Consulta de Ventas por Fecha</h1>
+<b><H1><p class="login-box-msg" > Registro de Ventas de Refacciones por Fecha  </H1></b></p>
   <div class="box-tools pull-right">
     
   </div>
@@ -43,7 +43,7 @@ if ($_SESSION['consultav']==1) {
     </select>
     <br>
     <button class="btn btn-success" onclick="listar()">
-      Mostrar</button>
+      Buscar</button>
   </div>
   <table id="tbllistado" class="table table-striped table-bordered table-condensed table-hover">
     <thead>

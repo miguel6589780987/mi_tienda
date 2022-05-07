@@ -21,7 +21,7 @@ if ($_SESSION['consultac']==1) {
         <div class="col-md-12">
       <div class="box">
 <div class="box-header with-border">
-  <h1 class="box-title">Consulta de Compras por Fecha</h1>
+<b><H1><p class="login-box-msg" > Registro de Compras de Refacciones por Fecha </H1></b></p>
   <div class="box-tools pull-right">
     
   </div>

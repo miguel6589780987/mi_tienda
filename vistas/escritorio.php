@@ -69,7 +69,7 @@ if ($_SESSION['escritorio']==1) {
 </div>
 <div class="figure" >
     <img src="../public/images/logokiterio.jpeg" 
-          width="85%" height="320" style="float: center">
+          width="85%" height="420" style="float: center">
   
         
   </div>

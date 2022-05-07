@@ -21,7 +21,8 @@ if ($_SESSION['ventas']==1) {
         <div class="col-md-12">
       <div class="box">
 <div class="box-header with-border">
-  <h1 class="box-title">Ventas <button class="btn btn-success" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i>Agregar</button></h1>
+<b><H1><p class="login-box-msg" > Control de Ventas </H1></b></p>
+  <h1 class="box-title"> <button class="btn btn-success" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i>Agregar Venta</button></h1>
   <div class="box-tools pull-right">
     
   </div>
@@ -79,7 +80,7 @@ if ($_SESSION['ventas']==1) {
     </div>
      <div class="form-group col-lg-2 col-md-2 col-xs-6">
       <a data-toggle="modal" href="#myModal">
-       <button id="btnAgregarArt" type="button" class="btn btn-primary"><span class="fa fa-plus"></span>Agregar Articulos</button>
+       <button id="btnAgregarArt" type="button" class="btn btn-primary"><span class="fa fa-plus"></span>Agregar Refacciones</button>
      </a>
     </div>
      <div class="form-group col-lg-2 col-md-2 col-xs-6">
@@ -134,7 +135,7 @@ if ($_SESSION['ventas']==1) {
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Seleccione un Articulo</h4>
+          <h4 class="modal-title">Seleccione las Refacciones</h4>
         </div>
         <div class="modal-body">
           <table id="tblarticulos" class="table table-striped table-bordered table-condensed table-hover">

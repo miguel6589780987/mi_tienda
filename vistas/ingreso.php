@@ -21,7 +21,8 @@ if ($_SESSION['compras']==1) {
         <div class="col-md-12">
       <div class="box">
 <div class="box-header with-border">
-  <h1 class="box-title">Ingresos <button class="btn btn-success" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i>Agregar</button></h1>
+<b><H1><p class="login-box-msg" > Control de Ingresos de Refacciones</H1></b></p>
+  <h1 class="box-title"><button class="btn btn-success" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i>Nuevo Igreso </button></h1>
   <div class="box-tools pull-right">
     
   </div>
@@ -70,8 +71,9 @@ if ($_SESSION['compras']==1) {
      <div class="form-group col-lg-6 col-md-6 col-xs-12">
       <label for="">Tipo Comprobante(*): </label>
      <select name="tipo_comprobante" id="tipo_comprobante" class="form-control selectpicker" required>
-       <option value="Boleta">Boleta</option>
+     <!--  <option value="Boleta">Boleta</option>
        <option value="Factura">Factura</option>
+       <option value="Ticket">Ticket</option>-->
        <option value="Ticket">Ticket</option>
      </select>
     </div>
@@ -85,11 +87,12 @@ if ($_SESSION['compras']==1) {
     </div>
     <div class="form-group col-lg-2 col-md-2 col-xs-6">
       <label for="">Impuesto: </label>
-      <input class="form-control" type="text" name="impuesto" id="impuesto">
+      <input class="form-control" type="text"  id="impuesto" name="impuesto" value="1.16" >
+      
     </div>
     <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-12">
      <a data-toggle="modal" href="#myModal">
-       <button id="btnAgregarArt" type="button" class="btn btn-primary"><span class="fa fa-plus"></span>Agregar Articulos</button>
+       <button id="btnAgregarArt" type="button" class="btn btn-primary"><span class="fa fa-plus"></span>Agregar Refacciones</button>
      </a>
     </div>
 <div class="form-group col-lg-12 col-md-12 col-xs-12">
@@ -108,7 +111,7 @@ if ($_SESSION['compras']==1) {
          <th></th>
          <th></th>
          <th></th>
-         <th><h4 id="total">S/. 0.00</h4><input type="hidden" name="total_compra" id="total_compra"></th>
+         <th><h4 id="total">$.0.00</h4><input type="hidden" name="total_compra" id="total_compra"></th>
        </tfoot>
        <tbody>
          

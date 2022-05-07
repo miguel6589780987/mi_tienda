@@ -36,10 +36,10 @@ if (strlen(session_id())<1)
     <!-- Logo -->
     <a href="escritorio.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b></b>  </span>
+      <span class="logo-mini"><b>MTSK</b>  </span>
       <!-- logo for regular state and mMobile devices -->
       <img src="../public/images/logokiterio.jpeg" 
-          width="60%" height="105%" style="float: center">
+          width="55%" height="120%" style="float: center">
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -55,6 +55,8 @@ if (strlen(session_id())<1)
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="../files/usuarios/<?php echo $_SESSION['imagen']; ?>" class="user-image" alt="User Image">
               <span class="hidden-xs"><?php echo $_SESSION['nombre']; ?></span>
+
+         
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->

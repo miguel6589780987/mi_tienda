@@ -18,9 +18,10 @@ if ($_SESSION['almacen']==1) {
         <div class="col-md-12">
       <div class="box">
 <div class="box-header with-border">
-  <h1 class="box-title">Articulo <button class="btn btn-success" onclick="mostrarform(true)" id="btnagregar"><i class="fa fa-plus-circle"></i>Agregar</button> <a target="_blank" href="../reportes/rptarticulos.php"><button class="btn btn-info">Reporte</button></a></h1>
+<b><H1><p class="login-box-msg" > Control de Refacciones</H1></b></p>
+  <h1 class="box-title"> <button class="btn btn-success" onclick="mostrarform(true)" id="btnagregar"><i class="fa fa-plus-circle"></i>Agregar Refaccion</button> <a target="_blank" href="../reportes/rptarticulos.php"><button class="btn btn-info">Generar Reporte de Refacciones </button></a></h1>
   <div class="box-tools pull-right">
-    
+
   </div>
 </div>
 <!--box-header-->
@@ -34,7 +35,7 @@ if ($_SESSION['almacen']==1) {
       <th>Codigo</th>
       <th>Stock</th>
       <th>Imagen</th>
-      <th>Descripcion</th>
+      <th>Piezas</th>
       <th>Marca</th>
       <th>Aplicacion</th>
       <th>Estado</th>
@@ -48,7 +49,7 @@ if ($_SESSION['almacen']==1) {
       <th>Codigo</th>
       <th>Stock</th>
       <th>Imagen</th>
-      <th>Descripcion</th>
+      <th>Piezas</th>
       <th>Marca</th>
       <th>Aplicacion</th>
       <th>Estado</th>
@@ -86,7 +87,7 @@ if ($_SESSION['almacen']==1) {
       <label for="">Imagen:</label>
       <input class="form-control" type="file" name="imagen" id="imagen">
       <input type="hidden" name="imagenactual" id="imagenactual">
-      <img src="" alt="" width="150px" height="120" id="imagenmuestra">
+      <img src="" alt="" width="250px" height="220" id="imagenmuestra">
     </div>
     <div class="form-group col-lg-6 col-md-6 col-xs-12">
       <label for="">Codigo:</label>
