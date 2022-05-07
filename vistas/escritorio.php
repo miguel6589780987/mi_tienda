@@ -62,40 +62,46 @@ if ($_SESSION['escritorio']==1) {
         <div class="col-md-12">
       <div class="box">
 <div class="box-header with-border">
-  <h1 class="box-title">Escritorio</h1>
+ 
   <div class="box-tools pull-right">
     
   </div>
 </div>
+<div class="figure" >
+    <img src="../public/images/logokiterio.jpeg" 
+          width="85%" height="320" style="float: center">
+  
+        
+  </div>
 <!--box-header-->
 <!--centro-->
 <div class="panel-body">
 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-  <div class="small-box bg-aqua">
+  <div class="small-box bg-red">
     <div class="inner">
       <h4 style="font-size: 17px;">
-        <strong>S/. <?php echo $totalc; ?> </strong>
+        <strong>$<?php echo $totalc; ?> </strong>
       </h4>
-      <p>Compras</p>
+      <p>Ingreso de Refacciones</p>
     </div>
     <div class="icon">
       <i class="ion ion-bag"></i>
     </div>
-    <a href="ingreso.php" class="small-box-footer">Compras <i class="fa fa-arrow-circle-right"></i></a>
+    <a href="ingreso.php" class="small-box-footer">Ingreso de refacciones <i class="fa fa-arrow-circle-right"></i></a>
   </div>
 </div>
 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-  <div class="small-box bg-green">
+  <div class="small-box bg-black">
     <div class="inner">
       <h4 style="font-size: 17px;">
-        <strong>S/. <?php echo $totalv; ?> </strong>
+        <strong>$ <?php echo $totalv; ?> </strong>
       </h4>
-      <p>Ventas</p>
+      <p>Ventas Realizadas</p>
     </div>
     <div class="icon">
       <i class="ion ion-bag"></i>
     </div>
-    <a href="venta.php" class="small-box-footer">Ventas <i class="fa fa-arrow-circle-right"></i></a>
+    <a href="venta.php" class="small-box-footer">Ventas Realizadas <i class="fa fa-arrow-circle-right"></i></a>
   </div>
 </div>
 </div>
@@ -103,7 +109,7 @@ if ($_SESSION['escritorio']==1) {
 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
   <div class="box box-primary">
     <div class="box-header with-border">
-      Compras de los ultimos 10 dias
+      Ingresos de Refacciones de los ultimos 10 dias
     </div>
     <div class="box-body">
       <canvas id="compras" width="400" height="300"></canvas>
@@ -113,7 +119,7 @@ if ($_SESSION['escritorio']==1) {
 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
   <div class="box box-primary">
     <div class="box-header with-border">
-      Ventas de los ultimos 12 meses
+      Ventas Realizadas de los ultimos 12 meses
     </div>
     <div class="box-body">
       <canvas id="ventas" width="400" height="300"></canvas>
@@ -146,7 +152,7 @@ var compras = new Chart(ctx, {
     data: {
         labels: [<?php echo $fechasc ?>],
         datasets: [{
-            label: '# Compras en S/. de los últimos 10 dias',
+            label: '# Ingresos de Refacciones en $ de los últimos 10 dias',
             data: [<?php echo $totalesc ?>],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -191,7 +197,7 @@ var ventas = new Chart(ctx, {
     data: {
         labels: [<?php echo $fechasv ?>],
         datasets: [{
-            label: '# Ventas en S/. de los últimos 12 meses',
+            label: '# Ventas  Realizadas en $ de los últimos 12 meses',
             data: [<?php echo $totalesv ?>],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
