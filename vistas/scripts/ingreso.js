@@ -24,7 +24,7 @@ function limpiar(){
 	$("#proveedor").val("");
 	$("#serie_comprobante").val("");
 	$("#num_comprobante").val("");
-	$("#impuesto").val("");
+	$("#impuesto").val("1.16");
 
 	$("#total_compra").val("");
 	$(".filas").remove();
@@ -38,7 +38,7 @@ function limpiar(){
 	$("#fecha_hora").val(today);
 
 	//marcamos el primer tipo_documento
-	$("#tipo_comprobante").val("Boleta");
+	$("#tipo_comprobante").val("Ticket");
 	$("#tipo_comprobante").selectpicker('refresh');
 
 }
