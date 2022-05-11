@@ -19,7 +19,7 @@ if ($_SESSION['almacen']==1) {
       <div class="box">
 <div class="box-header with-border">
 <b><H1><p class="login-box-msg" > Control de Refacciones</H1></b></p>
-  <h1 class="box-title"> <button class="btn btn-success" onclick="mostrarform(true)" id="btnagregar"><i class="fa fa-plus-circle"></i>Agregar Refaccion</button> <a target="_blank" href="../reportes/rptarticulos.php"><button class="btn btn-info">Generar Reporte de Refacciones </button></a></h1>
+  <h1 class="box-title"> <button class="btn btn-success" onclick="mostrarform(true)" id="btnagregar"><i class="fa fa-plus-circle"></i>Agregar Refaccion</button></h1>
   <div class="box-tools pull-right">
 
   </div>
@@ -92,8 +92,8 @@ if ($_SESSION['almacen']==1) {
     <div class="form-group col-lg-6 col-md-6 col-xs-12">
       <label for="">Código:</label>
       <input class="form-control" type="text" name="codigo" id="codigo" placeholder="codigo del prodcuto" required>
-      <button class="btn btn-success" type="button" onclick="generarbarcode()">Generar</button>
-      <button class="btn btn-info" type="button" onclick="imprimir()">Imprimir</button>
+      <!-- <button class="btn btn-success" type="button" onclick="generarbarcode()">Generar</button> -->
+      <!-- <button class="btn btn-info" type="button" onclick="imprimir()">Imprimir</button> -->
       <div id="print">
         <svg id="barcode"></svg>
       </div>
