@@ -108,13 +108,13 @@ if ($_SESSION['escritorio']==1) {
 if ($_SESSION['almacen']==1) {
   echo ' <li class="treeview">
           <a href="#">
-            <i class="fa fa-laptop"></i> <span>Refacciones</span>
+            <i class="fa fa-laptop"></i> <span> Refacciones y Categoria</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="articulo.php"><i class="fa fa-circle-o"></i> Stock</a></li>
+            <li><a href="articulo.php"><i class="fa fa-circle-o"></i>Agregar Refaccion</a></li>
             <li><a href="categoria.php"><i class="fa fa-circle-o"></i> Categorias</a></li>
           </ul>
         </li>';
@@ -124,13 +124,13 @@ if ($_SESSION['almacen']==1) {
 if ($_SESSION['compras']==1) {
   echo ' <li class="treeview">
           <a href="#">
-            <i class="fa fa-th"></i> <span>Entrada de Refacciones  </span>
+            <i class="fa fa-th"></i> <span>Entradas y Proveedores  </span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="ingreso.php"><i class="fa fa-circle-o"></i>Ingresos a Almacén</a></li>
+            <li><a href="ingreso.php"><i class="fa fa-circle-o"></i>Entrada a Almacén</a></li>
             <li><a href="proveedor.php"><i class="fa fa-circle-o"></i> Proveedores</a></li>
           </ul>
         </li>';
@@ -141,7 +141,7 @@ if ($_SESSION['compras']==1) {
 if ($_SESSION['ventas']==1) {
   echo '<li class="treeview">
           <a href="#">
-            <i class="fa fa-shopping-cart"></i> <span>Control de Ventas</span>
+            <i class="fa fa-shopping-cart"></i> <span> Ventas y clientes </span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
