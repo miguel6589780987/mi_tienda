@@ -38,7 +38,10 @@ public function mostrar($idarticulo){
 
 //listar registros 
 public function listar(){
-	$sql="SELECT a.idarticulo,a.idcategoria,c.nombre as categoria,a.codigo, a.nombre,a.stock,a.descripcion,a.marca,a.aplicacion,a.imagen,a.condicion FROM articulo a INNER JOIN Categoria c ON a.idcategoria=c.idcategoria";
+	$sql="SELECT a.idarticulo,a.idcategoria,c.nombre as categoria,a.codigo, a.nombre,a.stock,a.descripcion,a.marca,a.aplicacion,a.imagen,a.condicion,di.precio_venta as precio
+		  FROM articulo a 
+		  INNER JOIN Categoria c ON a.idcategoria=c.idcategoria
+		  LEFT JOIN detalle_ingreso di on a.idarticulo = di.idarticulo";
 	return ejecutarConsulta($sql);
 }
 

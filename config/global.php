@@ -3,7 +3,7 @@
 define("DB_HOST", "localhost");
 
 // nombre de la base de datos
-define("DB_NAME", "mi_tienda");
+define("DB_NAME", "mi_tienda_dev");
 
 
 //nombre de usuario de base de datos

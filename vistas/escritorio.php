@@ -41,8 +41,10 @@ if ($_SESSION['escritorio']==1) {
   $ventas12 = $consulta->ventasultimos_12meses ();
   $fechasv='';
   $totalesv='';
+
  if(!empty($ventas12)){
   while ($regfechav=$ventas12->fetch_object()) {
+    print_r($regfechav);
     $fechasv=$fechasv.'"'.$regfechav->fecha.'",';
     $totalesv=$totalesv.$regfechav->total.',';
   }

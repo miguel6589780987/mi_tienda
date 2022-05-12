@@ -37,7 +37,7 @@ public function comprasultimos_10dias(){
 }
 
 public function ventasultimos_12meses(){
-	$sql=" SELECT DATE_FORMAT(fecha_hora,'%M') AS fecha, SUM(total_venta) AS total FROM venta GROUP BY (fecha_hora) ORDER BY fecha_hora DESC LIMIT 0,12";
+	$sql="SELECT  month(v.fecha_hora) as mes,DATE_FORMAT (v.fecha_hora,'%M') as fecha,sum( v.total_venta) as total FROM venta v group by mes,fecha ORDER BY mes DESC LIMIT 0,12";
 	return ejecutarConsulta($sql);
 }
 

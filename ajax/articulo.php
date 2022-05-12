@@ -64,7 +64,8 @@ switch ($_GET["op"]) {
             "6"=>$reg->descripcion,
 			"7"=>$reg->marca,
 			"8"=>$reg->aplicacion,
-            "9"=>($reg->condicion)?'<span class="label bg-green">Activado</span>':'<span class="label bg-red">Desactivado</span>'
+			"9"=>'$'.$reg->precio,
+            "10"=>($reg->condicion)?'<span class="label bg-green">Activado</span>':'<span class="label bg-red">Desactivado</span>'
               );
 		}
 		$results=array(

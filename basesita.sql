@@ -103,11 +103,7 @@ CREATE TABLE `detalle_ingreso` (
 -- Dumping data for table `detalle_ingreso`
 --
 
-LOCK TABLES `detalle_ingreso` WRITE;
-/*!40000 ALTER TABLE `detalle_ingreso` DISABLE KEYS */;
-INSERT INTO `detalle_ingreso` VALUES (32,17,2,1,139.00,158.00),(33,18,3,1,250.00,400.00),(34,19,6,1,300.25,500.21),(35,20,7,1,938.99,1573.32),(36,21,5,1,650.00,750.00),(40,22,6,1,50.00,100.00),(41,23,4,4,50.00,100.00),(42,23,5,5,4.00,100.00);
-/*!40000 ALTER TABLE `detalle_ingreso` ENABLE KEYS */;
-UNLOCK TABLES;
+
 
 --
 -- Table structure for table `detalle_venta`
@@ -134,12 +130,6 @@ CREATE TABLE `detalle_venta` (
 --
 -- Dumping data for table `detalle_venta`
 --
-
-LOCK TABLES `detalle_venta` WRITE;
-/*!40000 ALTER TABLE `detalle_venta` DISABLE KEYS */;
-INSERT INTO `detalle_venta` VALUES (52,32,6,1,500.21,0.00),(53,33,3,1,400.00,0.00),(54,35,6,1,500.21,0.00),(55,35,6,1,500.21,0.00),(56,36,4269,1,6.00,2.00),(57,37,3,1,400.00,0.00),(58,37,3,1,400.00,0.00);
-/*!40000 ALTER TABLE `detalle_venta` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `ingreso`
@@ -171,11 +161,7 @@ CREATE TABLE `ingreso` (
 -- Dumping data for table `ingreso`
 --
 
-LOCK TABLES `ingreso` WRITE;
-/*!40000 ALTER TABLE `ingreso` DISABLE KEYS */;
-INSERT INTO `ingreso` VALUES (17,9,1,'Boleta','','11','2022-04-27 00:00:00',11.00,139.00,'Anulado'),(18,7,1,'Ticket','00003','002','2022-04-27 00:00:00',0.00,250.00,'Aceptado'),(19,9,1,'Ticket','00003','003','2022-04-27 00:00:00',0.00,300.25,'Aceptado'),(20,9,1,'Factura','00003','004','2022-04-27 00:00:00',18.00,938.99,'Aceptado'),(21,7,1,'Ticket','001','002','2022-04-28 00:00:00',0.00,650.00,'Anulado'),(22,9,1,'Ticket','1','001','2022-05-07 00:00:00',1.16,50.00,'Aceptado'),(23,9,1,'','','','2022-05-07 00:00:00',0.00,2.00,'Aceptado');
-/*!40000 ALTER TABLE `ingreso` ENABLE KEYS */;
-UNLOCK TABLES;
+
 
 --
 -- Table structure for table `permiso`
@@ -197,7 +183,7 @@ CREATE TABLE `permiso` (
 
 LOCK TABLES `permiso` WRITE;
 /*!40000 ALTER TABLE `permiso` DISABLE KEYS */;
-INSERT INTO `permiso` VALUES (1,'Escritorio'),(2,'Almacen'),(3,'Compras'),(4,'Ventas'),(5,'Acceso'),(6,'Consulta Compras'),(7,'Consulta Ventas'),(8,'Corte');
+INSERT INTO `permiso` VALUES (1,'Escritorio'),(2,'Almacen'),(3,'Compras'),(4,'Ventas'),(5,'Acceso'),(6,'Consulta Compras'),(7,'Consulta Ventas');
 /*!40000 ALTER TABLE `permiso` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -262,7 +248,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'EDUARDO QUITERIO GUZMAN','INE','0001','PROLOG OCAMPO No, 367 Colonia Olivos Actopan Hgo.','7727270544','equiterio@gmail.com','Administrador','admin','8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918','1651929957.jpeg',1),(2,'ALBA MARIA GONZALEZ MERA','INE','0002','Colonia aviación No. 8 Actopan Hgo.','7721207350','Alba_maria125@hotmail.com','Cajera','Cajera','5607f305a2e3e07f9b0b2e5410412e74379d4aeca3474379d49ced75474edc9a','1651930323.png',1),(3,'armand','DNI','a','a','484562165','kkk@gmail.com','a','miguel','fef3d83e32b4d981b0c0f75206e891268c6aa8bd8db5a315db7bf24168a4be27','',1),(4,'mariana','DNI','4555','smdndd','7721397555','mary_ann_20@hotmail.com','mariana','mariana','a410b5bf29327087f83e5a424c32316c8da82978be253494f15cb4be2aa76484','',1);
+INSERT INTO `usuario` VALUES (1,'EDUARDO QUITERIO GUZMAN','INE','0001','PROLOG OCAMPO No, 367 Colonia Olivos Actopan Hgo.','7727270544','equiterio@gmail.com','Administrador','admin','8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918','1651929957.jpeg',1),(2,'ALBA MARIA GONZALEZ MERA','INE','0002','Colonia aviación No. 8 Actopan Hgo.','7721207350','Alba_maria125@hotmail.com','Cajera','Cajera','5607f305a2e3e07f9b0b2e5410412e74379d4aeca3474379d49ced75474edc9a','1651930323.png',1);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -291,7 +277,7 @@ CREATE TABLE `usuario_permiso` (
 
 LOCK TABLES `usuario_permiso` WRITE;
 /*!40000 ALTER TABLE `usuario_permiso` DISABLE KEYS */;
-INSERT INTO `usuario_permiso` VALUES (119,3,4),(120,4,1),(121,4,2),(122,4,3),(123,4,4),(124,4,5),(125,4,6),(126,4,7),(127,4,8),(199,2,1),(200,2,4),(201,2,8),(210,1,1),(211,1,2),(212,1,3),(213,1,4),(214,1,5),(215,1,6),(216,1,7),(217,1,8);
+INSERT INTO `usuario_permiso` VALUES (199,2,1),(200,2,4),(201,2,8),(210,1,1),(211,1,2),(212,1,3),(213,1,4),(214,1,5),(215,1,6),(216,1,7);
 /*!40000 ALTER TABLE `usuario_permiso` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -325,12 +311,7 @@ CREATE TABLE `venta` (
 -- Dumping data for table `venta`
 --
 
-LOCK TABLES `venta` WRITE;
-/*!40000 ALTER TABLE `venta` DISABLE KEYS */;
-INSERT INTO `venta` VALUES (32,11,1,'Boleta','','002','2022-04-27 00:00:00',0.00,500.21,'Anulado'),(33,11,1,'Ticket','1','1','2022-04-27 00:00:00',0.00,400.00,'Aceptado'),(34,8,1,'Ticket','','45','2022-04-28 00:00:00',0.00,0.00,'Aceptado'),(35,8,1,'Ticket','','55','2022-04-28 00:00:00',0.00,1000.42,'Aceptado'),(36,8,1,'Factura','2','1','2022-04-28 00:00:00',18.00,0.00,'Anulado'),(37,11,1,'Ticket','','000','2022-05-07 00:00:00',0.00,800.00,'Aceptado');
-/*!40000 ALTER TABLE `venta` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
