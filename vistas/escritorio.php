@@ -44,7 +44,7 @@ if ($_SESSION['escritorio']==1) {
 
  if(!empty($ventas12)){
   while ($regfechav=$ventas12->fetch_object()) {
-    print_r($regfechav);
+    
     $fechasv=$fechasv.'"'.$regfechav->fecha.'",';
     $totalesv=$totalesv.$regfechav->total.',';
   }
